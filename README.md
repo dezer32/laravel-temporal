@@ -189,3 +189,18 @@ TEMPORAL_UI_VERSION=2.8.3
 TEMPORAL_CLI_ADDRESS=temporal:7233
 TEMPORAL_CORS_ORIGINS=http://localhost:3000
 ```
+
+### composer.json
+
+```json
+{
+    ...
+	"repositories": [
+		{
+			"type": "git",
+			"url": "git@github.com:dezer32/laravel-temporal.git"
+		}
+	],
+    ...
+}
+```
