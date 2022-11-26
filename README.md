@@ -172,3 +172,13 @@ volumes:
   tp_database_data:
     driver: local
 ```
+
+### .env
+
+```dotenv
+WORKING_DIR=/var/app
+TEMPORAL_VERSION=1.18
+TEMPORAL_UI_VERSION=2.8.3
+TEMPORAL_CLI_ADDRESS=temporal:7233
+TEMPORAL_CORS_ORIGINS=http://localhost:3000
+```
