@@ -4,6 +4,7 @@
 
 
 This is an alternative implementation of Laravel's temporal.io integration.<br>
+For Laravel 9.0.<br>
 Older link: [laravel-temporal-project.git](https://github.com/dezer32/laravel-temporal-project.git)
 
 ## Installation
