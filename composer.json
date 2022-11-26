@@ -1,0 +1,31 @@
+{
+	"name": "dezer32/laravel-temporal",
+	"description": "Integration temporal to laravel.",
+	"type": "library",
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"Dezer32\\Temporal\\Laravel\\Core\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Dezer",
+			"email": "i@appdevelop.ru"
+		}
+	],
+	"minimum-stability": "stable",
+	"require": {
+		"php": "^8.0",
+		"nyholm/psr7": "^1.5",
+		"spiral/roadrunner": "^2.12",
+		"symfony/psr-http-message-bridge": "^2.1",
+		"temporal/sdk": "^2.3",
+		"illuminate/support": "^9.41",
+		"illuminate/console": "^9.41",
+		"illuminate/http": "^9.41"
+	},
+	"bin": [
+		"config/.rr.yaml"
+	]
+}
