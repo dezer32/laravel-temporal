@@ -18,19 +18,6 @@ class CoreServiceProvider extends ServiceProvider
         $this->registerProviders();
     }
 
-    public function boot(): void
-    {
-        $this->publishes([
-            __DIR__ . '/../../config/.rr.yaml' => $this->app->basePath('.rr.yaml'),
-        ], 'laravel-temporal-rr.yaml');
-
-        $this->publishes([
-            __DIR__ . '/../../docker/php/8.1-cli/Dockerfile' => $this->app->basePath('docker/php/8.1-cli/Dockerfile'),
-            __DIR__ . '/../../docker-compose.yml' => $this->app->basePath('docker-compose.yml'),
-            __DIR__ . '/../../.env.temporal' => $this->app->basePath('.env.temporal'),
-        ], 'laravel-temporal-docker');
-    }
-
     private function registerProviders(): void
     {
         foreach ($this->providers as $provider) {
