@@ -176,6 +176,13 @@ volumes:
 ### .env
 
 ```dotenv
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=temporal-project
+DB_USERNAME=temporal-project
+DB_PASSWORD=temporal-project
+
 WORKING_DIR=/var/app
 TEMPORAL_VERSION=1.18
 TEMPORAL_UI_VERSION=2.8.3
