@@ -108,9 +108,7 @@ version: "3.8"
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: docker/php/8.1-cli/Dockerfile
+    build: .
     depends_on:
       - temporal
     environment:
