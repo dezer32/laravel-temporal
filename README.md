@@ -20,6 +20,24 @@ TEMPORAL_CLI_ADDRESS=temporal:7233
 
 ### 4. Profit!
 
+## Usage
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace Dezer32\Temporal\Laravel\Example\Providers;
+
+use Dezer32\Temporal\Laravel\Core\Providers\TemporalServiceProvider;
+
+class ExampleTemporalServiceProvider extends TemporalServiceProvider
+{
+    protected array $activityBindings = [];
+    protected array $workflowBindings = [];
+}
+```
+
 ## Other
 
 ### .rr.yaml
