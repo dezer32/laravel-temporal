@@ -27,5 +27,12 @@
 	},
 	"bin": [
 		"config/.rr.yaml"
-	]
+	],
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Dezer32\\Temporal\\Laravel\\Core\\Providers\\CoreServiceProvider"
+			]
+		}
+	}
 }
