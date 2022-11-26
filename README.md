@@ -2,6 +2,10 @@
 
 ## Introduce
 
+
+This is an alternative implementation of Laravel's temporal.io integration.<br>
+Older link: [laravel-temporal-project.git](https://github.com/dezer32/laravel-temporal-project.git)
+
 ## Installation
 
 ### 1. Install package
@@ -37,6 +41,8 @@ class ExampleTemporalServiceProvider extends TemporalServiceProvider
     protected array $workflowBindings = [];
 }
 ```
+
+Demo usage: [demo-laravel-temporal.git](https://github.com/dezer32/demo-laravel-temporal.git)
 
 ## Other
 
