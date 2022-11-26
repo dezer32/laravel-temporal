@@ -25,9 +25,6 @@
 		"illuminate/console": "^9.41",
 		"illuminate/http": "^9.41"
 	},
-	"bin": [
-		"config/.rr.yaml"
-	],
 	"extra": {
 		"laravel": {
 			"providers": [
