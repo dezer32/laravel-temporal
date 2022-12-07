@@ -15,17 +15,20 @@ abstract class TemporalServiceProvider extends ServiceProvider
     protected array $workflowBindings;
     protected array $activityBindings;
 
+    public function register(): void
+    {
+        $this->bindingsActivity();
+    }
+
     /**
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
      * @throws InheritLaravelTemporalException
      */
-    public function register(): void
+    public function boot(): void
     {
         /** @var WorkerInterface $worker */
         $worker = $this->app->get(WorkerInterface::class);
-
-        $this->bindingsActivity();
 
         $this->registerWorkflows($worker);
         $this->registerActivities($worker);
