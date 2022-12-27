@@ -27,7 +27,7 @@ COPY --from=composer /usr/bin/composer /usr/local/bin/composer
 
 # Copy application codebase
 WORKDIR /var/app
-COPY ../Docker/php/8.0-cli /var/app
+COPY . /var/app
 
 RUN composer install
 
