@@ -1,4 +1,4 @@
-FROM dezer/php-roadrunner:8.2-2.12.1 as php-cli-prod
+FROM dezer/php-roadrunner:1.0.0-8.2-2.12.1 as php-cli-prod
 
 WORKDIR /var/app
 
